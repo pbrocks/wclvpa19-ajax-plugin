@@ -1,0 +1,29 @@
+body.login {
+	background-image: url('../../images/wclvpa19-silhouette.png'),
+	url('../../images/wclvpa19-sunburst.png');
+	background-position: center bottom 35px, center center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100%, cover;
+}
+.login h1 a {
+	background-image: url('../../images/wclvpa19-logo.png');
+	height: 7rem;
+	width: 7rem;
+	background-size: 7rem 7rem;
+	background-repeat: no-repeat;
+}
+
+.login label {
+	color: #25627d;
+	font-size: 1rem;
+}
+.login #backtoblog a, .login #nav a {
+	color: #25627d;
+}
+
+.login .button-primary  {
+	background-color: #25627d;
+}
+.login .button-primary:hover  {
+	background-color: #D2C869;
+}
