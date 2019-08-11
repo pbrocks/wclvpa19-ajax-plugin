@@ -9,3 +9,23 @@ pre {
 	white-space: -o-pre-wrap;    /* Opera 7 */
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+#page {
+	min-height: 95vh;
+}
+
+.wp-block-column:nth-child(1) {
+	text-align: center;
+}
+
+.wp-block-columns.was-clicked {
+	background: rgba(22,22,252,.3);
+	padding: 2rem;
+}
+
+.wp-block-column h3.again-click.was-clicked {
+	color: blue;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: blue;
+}

@@ -92,6 +92,7 @@ function adding_to_wclvpa19_plugin_bottom() {
 	echo '<h4 style="color:rgba(250,128,114,.7);">Current Screen is <span style="color:rgba(250,128,114,1);">' . $screen->id . '</span></h4>';
 	echo 'Your WordPress version is ' . get_bloginfo( 'version' );
 	echo '<h4>DB Prefix is ' . $site_prefix . '</h4>';
-	echo '<h4>Find this file at ' . __FILE__ . '</h4></pre>';
+	echo '<h4>Find this file at ' . __FILE__ . '<br>';
+	echo 'The URL ' . plugins_url( '/', __FILE__ ) . '</h4></pre>';
 
 }
