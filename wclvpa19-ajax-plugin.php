@@ -3,7 +3,7 @@
  * Plugin Name: WCLVPA 2019 Plugin Sample
  * Plugin URL: https://github.com/pbrocks/wclvpa19-ajax-plugin
  * Author: pbrocks
- * Version: 1.1.2
+ * Version: 1.1.3
  * Author URI: https://github.com/pbrocks
  * Text Domain: wclvpa19-ajax-plugin
  * Domain Path: /languages

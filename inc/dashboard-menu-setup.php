@@ -53,7 +53,6 @@ add_action( 'add_to_customizations_dash', 'adding_to_wclvpa19_plugin_page' );
 function adding_to_wclvpa19_plugin_page() {
 	echo '<h3>' . ucwords( preg_replace( '/_+/', ' ', __FUNCTION__ ) ) . '</h3>';
 	echo '<h3>Add more info here</h3>';
-	echo do_shortcode( '[unsplash-ajax]' );
 	echo do_shortcode( '[trigger-ajax]' );
 }
 
