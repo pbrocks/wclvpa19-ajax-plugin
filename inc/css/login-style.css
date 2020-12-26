@@ -27,3 +27,12 @@ body.login {
 .login .button-primary:hover  {
 	background-color: #D2C869;
 }
+.login form {
+	/*background: radial-gradient( #D3C76A, transparent );*/
+	background: radial-gradient( transparent, #D3C76A );
+    border-radius: 2rem;
+    text-align: center;
+}
+.login p {
+	 text-align: center;
+}
