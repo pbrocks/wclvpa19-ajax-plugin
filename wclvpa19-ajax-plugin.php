@@ -14,7 +14,6 @@
  */
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
-// echo '<h2>' . __FILE__ . '</h2>';
 if ( file_exists( __DIR__ . '/inc' ) && is_dir( __DIR__ . '/inc' ) ) {
 	/**
 	 * This line includes all php files located in the /inc folder. If there is a problem with the code in the file, you can comment this line out by placing two forward slashes '//' in front of the require statement which turns off all code in that directory.
