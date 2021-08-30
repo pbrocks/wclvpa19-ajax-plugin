@@ -15,7 +15,7 @@ add_action( 'wp_ajax_nopriv_unsplash_ajax_request', 'run_unsplash_ajax_function'
  */
 function setup_unsplash_ajax_shortcode() {
 	wp_enqueue_script( 'unsplash-ajax' );
-	$return = '<form><input id="unsplash-ajax" type="submit" value="Trigger Unsplash" /></form><div id="return-unsplash"></div>';
+	$return = '<form><input id="unsplash-ajax" type="submit" value="Trigger Unsplash" /></form><div id="return-unsplash" style="border:2px solid gray; background-color:rgba(222,222,222,.6);padding:2rem 1rem;"></div>';
 	return $return;
 }
 /**
@@ -35,7 +35,7 @@ function initialize_unsplash_ajax_scripts() {
 }
 
 function run_unsplash_ajax_function() {
-	$return_data = $_POST;
+		  $return_data = $_POST;
 	echo '<pre>$return_data ';
 	print_r( $return_data );
 	echo '</pre>';

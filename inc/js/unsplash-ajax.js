@@ -24,14 +24,15 @@ jQuery(document).ready(function($) {
             	'random_number' : unsplash_ajax_object.random_number,
             },
             success:function(data) {
-            	// $( '#return-unsplash' ).html(data);
+            	$( '#return-unsplash' ).html(data);
                 let ran = getRandomNumber();
-                document.getElementById('page').style.background = 'aliceblue url("https://picsum.photos/1800/1200?random=' + ran + '") no-repeat fixed center center';
-                document.querySelector('.wp-block-column h3.again-click').className += " was-clicked";
-                document.querySelector('.wp-block-columns').className += " was-clicked";
-                document.querySelector('.wp-block-column h3.again-click.was-clicked').innerHTML = "Click AGAIN to Change!";
-                document.querySelector('.site-branding').style.opacity = 0;
-                document.querySelector('#colophon .site-info').style.opacity = 0;
+                // document.getElementById('page').style.background = 'aliceblue url("https://picsum.photos/1800/1200?random=' + ran + '") no-repeat fixed center center';
+                document.querySelector('.single').style.background = 'aliceblue url("https://picsum.photos/1800/1200?random=' + ran + '") no-repeat fixed center center';
+                // document.querySelector('.wp-block-column h3.again-click').className += " was-clicked";
+                // document.querySelector('.wp-block-columns').className += " was-clicked";
+                // document.querySelector('.wp-block-column h3.again-click.was-clicked').innerHTML = "Click AGAIN to Change!";
+                // document.querySelector('.site-branding').style.opacity = 0;
+                // document.querySelector('#colophon .site-info').style.opacity = 0;
             	// document.getElementById('page').style.background=getRandomColor();
                 // document.getElementById('page').style.background='repeating-linear-gradient(45deg, purple, transparent 10rem)';
                 // , 'url(//unsplash.it/900/600)';
