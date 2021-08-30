@@ -3,10 +3,12 @@
  * Plugin Name: WCLVPA 2019 Plugin Sample
  * Plugin URL: https://github.com/pbrocks/wclvpa19-ajax-plugin
  * Author: pbrocks
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author URI: https://github.com/pbrocks
  * Text Domain: wclvpa19-ajax-plugin
  * Domain Path: /languages
+ *
+ * @package wclvpa19_ajax_plugin
  */
 
 /**
@@ -14,12 +16,32 @@
  */
 defined( 'ABSPATH' ) || die( 'File cannot be accessed directly' );
 
-if ( file_exists( __DIR__ . '/inc' ) && is_dir( __DIR__ . '/inc' ) ) {
-	/**
-	 * This line includes all php files located in the /inc folder. If there is a problem with the code in the file, you can comment this line out by placing two forward slashes '//' in front of the require statement which turns off all code in that directory.
-	 */
-	foreach ( glob( __DIR__ . '/inc/*.php' ) as $filename ) {
-		require $filename;
+add_action( 'init', 'wclvpa19_ajax_plugin_load_php' );
+/**
+ * [wclvpa19_ajax_plugin_load_php]
+ * Tell WordPress where to find the php files.
+ *
+ * @since 1.0
+ *
+ * @return void
+ */
+function wclvpa19_ajax_plugin_load_php() {
+	if ( file_exists( __DIR__ . '/inc' ) && is_dir( __DIR__ . '/inc' ) ) {
+		/**
+		 * Include all php files in /inc directory.
+		 */
+		foreach ( glob( __DIR__ . '/inc/*.php' ) as $filename ) {
+			require $filename;
+		}
+	}
+
+	if ( file_exists( __DIR__ . '/classes' ) && is_dir( __DIR__ . '/classes' ) ) {
+		/**
+		 * Include all php files in /classes directory.
+		 */
+		foreach ( glob( __DIR__ . '/classes/*.php' ) as $filename ) {
+			require $filename;
+		}
 	}
 }
 
