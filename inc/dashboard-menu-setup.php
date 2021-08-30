@@ -32,6 +32,7 @@ function wclvpa19_plugin_page() {
 	do_action( 'add_to_customizations_dash' );
 	echo '</div>';
 
+	echo apply_shortcodes( '[wporg]My Text[/wporg]' );
 	echo '<div class="add-to-customizations-bottom" style="background:#efefef;border:.21rem solid salmon; padding:0 1rem; position: fixed; bottom: 2rem; right: 10%;">';
 	do_action( 'add_to_customizations_bottom' );
 	echo '</div>';
@@ -51,7 +52,7 @@ add_action( 'add_to_customizations_dash', 'adding_to_wclvpa19_plugin_page' );
  * @return string
  */
 function adding_to_wclvpa19_plugin_page() {
-	echo '<h3>' . ucwords( preg_replace( '/_+/', ' ', __FUNCTION__ ) ) . '</h3>';
+	 echo '<h3>' . ucwords( preg_replace( '/_+/', ' ', __FUNCTION__ ) ) . '</h3>';
 	echo '<h3>Add more info here</h3>';
 	echo do_shortcode( '[trigger-ajax]' );
 }
@@ -93,5 +94,4 @@ function adding_to_wclvpa19_plugin_bottom() {
 	echo '<h4>DB Prefix is ' . $site_prefix . '</h4>';
 	echo '<h4>Find this file at ' . __FILE__ . '<br>';
 	echo 'The URL ' . plugins_url( '/', __FILE__ ) . '</h4></pre>';
-
 }
